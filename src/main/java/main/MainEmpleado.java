@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 import modelo.Empleado;
-import modelo.exceptions.DuplicateInstanceException;
+
 import modelo.exceptions.InstanceNotFoundException;
 import modelo.servicio.empleado.ServicioEmpleado;
 import modelo.servicio.empleado.IServicioEmpleado;
@@ -20,7 +20,7 @@ public class MainEmpleado {
 
 		
 
-		// createEmpleados();
+		 createEmpleados();
 
 		listar();
 
@@ -44,7 +44,7 @@ public class MainEmpleado {
 
 	}
 	
-	private static void listar() {
+	public static void listar() {
 		List<Empleado> emps = new ArrayList<>();
 		
 

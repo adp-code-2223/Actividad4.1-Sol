@@ -6,7 +6,6 @@ import java.util.List;
 import modelo.Empleado;
 import modelo.dao.empleado.EmpleadoNeoDatisDao;
 import modelo.dao.empleado.IEmpleadoDao;
-import modelo.exceptions.DuplicateInstanceException;
 import modelo.exceptions.InstanceNotFoundException;
 import util.Utils;
 
@@ -19,7 +18,7 @@ public class ServicioEmpleado implements IServicioEmpleado {
 	}
 
 	@Override
-	public long createEmpleado(Empleado empleado) throws DuplicateInstanceException {
+	public long createEmpleado(Empleado empleado) {
 
 			return empleadoDao.create(empleado);
 
